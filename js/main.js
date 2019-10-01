@@ -33,6 +33,7 @@ document.getElementById('novoTodo').onclick = function() {
 MinhaLista.monstraUsuario();
 
 
-import { soma } from './funcoes';
+import { soma, sub } from './funcoes';
 
 console.log(soma(6, 1));
+console.log(sub(4,1));
