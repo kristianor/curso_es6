@@ -1,4 +1,4 @@
-
+//************* Classes ******************
 class List {
     constructor() {
         this.data = [];
@@ -8,7 +8,7 @@ class List {
         console.log(this.data);
     }
 }
-
+//Classes extendida da classe List
 class TodoList extends List {
 
     constructor() {
@@ -21,10 +21,18 @@ class TodoList extends List {
     }
 }
 
+//Instanciando o objeto MinhaLista
 const MinhaLista = new TodoList();
 
+//comando do botão para adicionar item na lista
 document.getElementById('novoTodo').onclick = function() {
     MinhaLista.add('Novo todo');
 }
 
+//Usando um metodo da classe
 MinhaLista.monstraUsuario();
+
+
+import { soma } from './funcoes';
+
+console.log(soma(6, 1));
